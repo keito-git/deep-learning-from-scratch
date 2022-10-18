@@ -1,3 +1,5 @@
+import numpy as np
+
 def numerical_gradient(f,x):
   h = 1e-4
   grad = np.zeros_like(x)
@@ -15,3 +17,5 @@ def numerical_gradient(f,x):
     x[idx] = tmp_val
     
   return grad
+
+  
